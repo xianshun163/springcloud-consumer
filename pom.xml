@@ -3,19 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.spring.cloud.test</groupId>
-	<artifactId>microservice-consumer-user</artifactId>
+	<groupId>com.xs.test</groupId>
+	<artifactId>spring-cloud-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>microservice-consumer-user</name>
-
-	<parent>
-		<groupId>com.spring.cloud.test</groupId>
-		<artifactId>microservice-spring-cloud</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
+	<name>spring-cloud-consumer</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,17 +18,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.4.3.RELEASE</version>
 		</dependency>
 
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-eureka</artifactId>
+		    <version>1.2.4.RELEASE</version>
 		</dependency>
-		
+			    <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>1.2.2.RELEASE</version>
+        </dependency>
 		<!-- 用于注册中心访问账号认证 -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-actuator</artifactId>
+		    <version>1.4.3.RELEASE</version>
 		</dependency>
 	</dependencies>
 
